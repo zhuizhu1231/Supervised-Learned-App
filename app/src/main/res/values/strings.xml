@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <!--    <string name="local_timezone">8</string>-->
+    <string name="date_format">yyyy-MM-dd HH:mm:ss</string>
+    <string name="date_picker_format">yyyy-MM-dd</string>
+    <string name="timezone">Asia/Shanghai</string>
+    <string name="app_url">http://192.168.13.1:8080</string>
+    <string name="title_diary">日程</string>
+    <string name="title_target">目标</string>
+    <string name="title_task">任务</string>
+    <string name="title_chart">图表</string>
+    <string name="title_self">我的</string>
+
+
+    <string name="menu_drawer_time_axis">时间轴</string>
+    <string name="menu_drawer_study_room">自习室</string>
+    <string name="menu_drawer_friend">好友</string>
+    <string name="menu_drawer_notes">便签</string>
+    <string name="menu_drawer_setting">设置</string>
+
+
+    <string name="drawer_header_desc">Navigation header</string>
+    <string name="drawer_header_user_name">昵称</string>
+    <string name="drawer_header_user_sign">个性签名</string>
+    <string name="task_start">开始</string>
+    <string name="action_add">添加</string>
+    <string name="title_activity_login">登录</string>
+
+
+    <string name="login_prompt_user_number">账号</string>
+    <string name="login_prompt_user_password">密码</string>
+    <string name="action_login_in">登录</string>
+    <string name="action_register">注册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_user_number">用户号码无效</string>
+    <string name="invalid_password">用户密码必须大于5个字符</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <string name="activity_friend_label">我的好友</string>
+    <string name="friend_new_button">新朋友</string>
+    <string name="action_send">发送</string>
+    <string name="server_item_name">系统通知</string>
+
+    <string name="import_urgent_text"><![CDATA[很重要&很紧急]]></string>
+    <string name="import_no_urgent_text"><![CDATA[很重要&不紧急]]></string>
+    <string name="no_import_urgent_text"><![CDATA[不重要&很紧急]]></string>
+    <string name="no_import_no_urgent_text"><![CDATA[不重要&不紧急]]></string>
+    <string name="text_diary_new">今日日程</string>
+    <string name="text_diary_history">过往日程</string>
+    <string name="text_diary_label">日程标签</string>
+    <string name="text_diary_search">搜索日程</string>
+    <string name="activity_diary_today_label">今日日程</string>
+    <string name="text_diary_done">完成情况</string>
+    <string name="close_text">轻点进入快速锁屏</string>
+    <string name="close_sub_text">选择锁机时长，并进入快速锁屏</string>
+    <string name="close_relax_text">小憩</string>
+    <string name="close_relax_sub_text">深呼吸，休息一会吧</string>
+    <string name="title_close">锁机</string>
+    <string name="menu_drawer_milepost">里程碑</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_move">排序</string>
+    <string name="action_delete">删除</string>
+    <string name="action_time_axis">历史时间轴</string>
+    <string name="action_data_analyse">数据分析</string>
+    <string name="count_data">累计数据</string>
+    <string name="count">次数</string>
+    <string name="time">时长</string>
+    <string name="working">正在进行中</string>
+    <string name="demo_sign">每一个垂头丧气，辜负希望的日子，都是在慢性自杀。</string>
+    <string name="mins">分钟</string>
+    <string name="re_count">累计次数</string>
+    <string name="adsorb_today">当日专注</string>
+    <string name="adsorb_time_distribute">累计专注时长分布</string>
+
+
+    <string name="title_activity_note">便签</string>
+    <string name="fragment_tab_note">便签</string>
+    <string name="fragment_tab_note_label">标签</string>
+    <string name="activity_milepost_label">里程碑</string>
+    <string name="title_activity_studyroom">StudyroomActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_group_number">自习室成员</string>
+    <string name="tab_group_chat">自习室聊天</string>
+    <string name="aver_time">日均时长</string>
+    <string name="day">天</string>
+
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="all">全部</string>
+    <string name="not_done">未完成</string>
+    <string name="done">已完成</string>
+    <string name="title_diary_history">过往日程</string>
+    <string name="text_note_edit">编辑便签</string>
+    <string name="text_note_label_edit">编辑便签标签</string>
+    <string name="text_note_label_add">添加标签</string>
+    <string name="text_task_edit">编辑任务</string>
+    <string name="task_title">任务标题</string>
+    <string name="text_task_title_input">请输入任务标题</string>
+    <string name="task_remark">任务备注</string>
+    <string name="text_task_remark_input">请输入任务备注</string>
+    <string name="minus_dimen">分钟</string>
+    <string name="text_task_work_time_input">请输入任务工作时长（分钟）</string>
+    <string name="text_target_edit">编辑目标</string>
+    <string name="text_target_title_input">请输入目标标题</string>
+    <string name="text_target_remark_input">请输入目标备注</string>
+    <string name="target_title">目标标题</string>
+    <string name="target_remark">目标备注</string>
+    <string name="text_target_relax_time_input">请输入目标任务间休息时长（分钟）</string>
+    <string name="register_prompt_user_name">请输入昵称</string>
+    <string name="register_prompt_user_password">请输入密码</string>
+    <string name="register_prompt_user_password_again">请再次输入密码</string>
+    <string name="text_set_your_sex">设置你的性别</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+
+
+    <string name="notice_password_less">密码必须多于5个字符</string>
+    <string name="notice_name_null">昵称不能为空</string>
+    <string name="notice_password_again_error">两次输入的密码不一致</string>
+    <string name="err_login">登录失败</string>
+    <string name="fail_request">请求失败,请检查网络连接情况</string>
+    <string name="fail_register">注册失败</string>
+    <string name="success_register">注册成功</string>
+    <string name="OVERRIDE_MESSAGE">同步服务端数据中……</string>
+    <string name="schedule_model_message">日程模块消息提示：</string>
+    <string name="action_syc">同步</string>
+    <string name="user_number_promot">您的账号号码为：</string>
+    <string name="know">我已知晓</string>
+    <string name="notes_model_message">便签模块消息提示：</string>
+    <string name="aim_model_message">目标模块消息提示：</string>
+    <string name="milepost_model_message">里程碑模块消息提示：</string>
+    <string name="task_model_message">任务模块消息提示：</string>
+    <string name="cache_fail_message">更新数据失败，请检查网络连接</string>
+    <string name="default_rest_time">5</string>
+    <string name="default_work_time">25</string>
+    <string name="notice">提示：</string>
+    <string name="delete_task_sure_text">是否确定删除任务</string>
+    <string name="text_milepost_edit">编辑里程碑</string>
+    <string name="milepost_title">里程碑名称</string>
+    <string name="text_milepost_title_input">请输入里程碑名称</string>
+    <string name="text_milepost_remark_input">请输入里程碑描述</string>
+    <string name="milepost_remark">里程碑描述</string>
+    <string name="text_milepost_date_input">请选择截至时间</string>
+    <string name="delete_sure_notice">是否确定删除</string>
+    <string name="die_time">"截止日期 "</string>
+    <string name="activity_schedule_edit_label">日程编辑</string>
+    <string name="activity_user_detail_label">我的资料</string>
+    <string name="drawer_header_user_sex">性别</string>
+    <string name="text_edit_user_data">编辑资料</string>
+    <string name="user_default_work_time">默认任务时长</string>
+    <string name="user_default_rest_time">默认休息时长</string>
+    <string name="user_register_time">注册时间</string>
+    <string name="user_last_login_time">上次登录时间</string>
+    <string name="offline">离线</string>
+    <string name="online">在线</string>
+    <string name="activity_schedule_search_label">日程搜索</string>
+    <string name="activity_schedule_tag_label">日程标签</string>
+    <string name="text_search_key">搜索关键字</string>
+    <string name="schedule">日程</string>
+    <string name="clock_set">已设置闹钟</string>
+    <string name="clock_no_set">未设置闹钟</string>
+    <string name="text_remark_edit">编辑备注</string>
+    <string name="remark_input">请输入备注</string>
+    <string name="schedule_title">日程名称</string>
+    <string name="notice_is_schedule_done">该日程是否完成</string>
+    <string name="text_label_edit">编辑标签</string>
+    <string name="aver_task">平均时长</string>
+    <string name="no_data">暂无数据</string>
+    <string name="friend_receiver">friend.content</string>
+    <string name="study_room_receiver">study.room.content</string>
+    <string name="activity_group">我的自习室</string>
+    <string name="text_add_friend">添加好友+</string>
+    <string name="text_friend_add">加为好友</string>
+    <string name="user_add_remark">添加备注</string>
+    <string name="text_friend_detail">好友资料</string>
+    <string name="user_remark">备注</string>
+    <string name="add_friend_sure">是否加为好友</string>
+    <string name="text_user_status">状态</string>
+    <string name="action_close_app">关闭程序</string>
+    <string name="action_user_logout">退出登录</string>
+    <string name="user_login_in">用户登录</string>
+    <string name="text_user_detail">用户资料</string>
+    <string name="text_room_new">新建自习室</string>
+    <string name="activity_room_label">我的自习室</string>
+    <string name="text_study_room_name">自习室名称</string>
+    <string name="text_room_work_time">自习室每日目标工作时间</string>
+    <string name="text_room_detail">自习室描述</string>
+    <string name="text_room_create">创建自习室</string>
+    <string name="text_create_time">创建时间</string>
+    <string name="text_room_exit">退出自习室</string>
+    <string name="text_add_room">添加自习室+</string>
+    <string name="day_adsorb_time_distribute">今日专注时长分布</string>
+    <string name="day_count">当日专注</string>
+    <string name="text_month_time_use">本月专注时长分布</string>
+    <string name="text_label_set">设置标签 ></string>
+    <string name="menu_drawer_task_label">任务标签</string>
+    <string name="default_setting">默认设置</string>
+    <string name="text_save">保存更改</string>
+
+
+</resources>

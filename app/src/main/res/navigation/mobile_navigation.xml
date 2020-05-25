@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_diary">
+
+    <fragment
+        android:id="@+id/navigation_diary"
+        android:name="com.example.demo.ui.diary.DiaryFragment"
+        android:label="@string/title_diary"
+        tools:layout="@layout/fragment_diary" />
+
+
+    <fragment
+        android:id="@+id/navigation_target"
+        android:name="com.example.demo.ui.target.TargetFragment"
+        android:label="@string/title_target"
+        tools:layout="@layout/fragment_target" />
+
+
+    <fragment
+        android:id="@+id/navigation_task"
+        android:name="com.example.demo.ui.task.TaskFragment"
+        android:label="@string/title_task"
+        tools:layout="@layout/fragment_task" />
+
+    <fragment
+        android:id="@+id/navigation_chart"
+        android:name="com.example.demo.ui.chart.ChartFragment"
+        android:label="@string/title_chart"
+        tools:layout="@layout/fragment_chart" />
+
+    <fragment
+        android:id="@+id/navigation_close"
+        android:name="com.example.demo.ui.close.CloseFragment"
+        android:label="@string/title_close"
+        tools:layout="@layout/fragment_close" />
+</navigation>

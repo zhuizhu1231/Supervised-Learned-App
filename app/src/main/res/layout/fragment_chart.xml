@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/diary_background"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<!--            <include layout="@layout/content_fragment_chart" />-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/diary_background"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/simple_layout_border"
+                    android:layout_marginTop="@dimen/simple_layout_border"
+                    android:layout_marginRight="@dimen/simple_layout_border"
+                    android:background="@color/simple_text_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simple_layout_border"
+                        android:text="@string/re_count"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_little_title"
+                        app:layout_constraintStart_toStartOf="@+id/guideline39"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/drawer_header_vertical_spacing"
+                        android:layout_marginTop="@dimen/simple_line_space"
+                        android:text="@string/count"
+                        android:textColor="@color/diary_text_background"
+                        app:layout_constraintStart_toStartOf="@+id/guideline39"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <TextView
+                        android:id="@+id/text_recount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_space"
+                        android:layout_marginBottom="@dimen/simple_layout_border"
+                        android:text="10"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_large_data"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView15"
+                        app:layout_constraintStart_toStartOf="@+id/textView15"
+                        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time"
+                        android:textColor="@color/diary_text_background"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                        app:layout_constraintEnd_toStartOf="@+id/textView18"
+                        app:layout_constraintStart_toEndOf="@+id/textView15"
+                        app:layout_constraintTop_toTopOf="@+id/textView15"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.04" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="40dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_percent="0.96" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aver_task"
+                        android:textColor="@color/diary_text_background"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+                        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mins"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_little_data"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_recount_time"
+                        app:layout_constraintStart_toEndOf="@+id/text_recount_time" />
+
+                    <TextView
+                        android:id="@+id/text_recount_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_large_data"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_recount"
+                        app:layout_constraintStart_toStartOf="@+id/textView17"
+                        app:layout_constraintTop_toTopOf="@+id/text_recount"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/text_recount_time_aver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_large_data"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_recount_time"
+                        app:layout_constraintEnd_toStartOf="@+id/textView22"
+                        app:layout_constraintTop_toTopOf="@+id/text_recount_time" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mins"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_little_data"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_recount_time"
+                        app:layout_constraintEnd_toEndOf="@id/guideline40" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/simple_layout_border"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/simple_layout_border"
+                    android:background="@color/simple_text_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                    <TextView
+                        android:id="@+id/textView_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simple_layout_border"
+                        android:text="@string/day_count"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_little_title"
+                        app:layout_constraintStart_toStartOf="@+id/guideline39_day"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView15_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/drawer_header_vertical_spacing"
+                        android:layout_marginTop="@dimen/simple_line_space"
+                        android:text="@string/count"
+                        android:textColor="@color/diary_text_background"
+                        app:layout_constraintStart_toStartOf="@+id/guideline39_day"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_day" />
+
+                    <TextView
+                        android:id="@+id/text_recount_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_space"
+                        android:layout_marginBottom="@dimen/simple_layout_border"
+                        android:text="10"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_large_data"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView15_day"
+                        app:layout_constraintStart_toStartOf="@+id/textView15_day"
+                        app:layout_constraintTop_toBottomOf="@+id/textView15_day" />
+
+                    <TextView
+                        android:id="@+id/textView17_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time"
+                        android:textColor="@color/diary_text_background"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView15_day"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline40_day"
+                        app:layout_constraintTop_toTopOf="@+id/textView15_day"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline39_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.04" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline40_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="40dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_percent="0.96" />
+
+                    <TextView
+                        android:id="@+id/textView20_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mins"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_little_data"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_recount_time_day"
+                        app:layout_constraintEnd_toEndOf="@+id/textView17_day" />
+
+                    <TextView
+                        android:id="@+id/text_recount_time_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_large_data"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_recount_day"
+                        app:layout_constraintEnd_toStartOf="@+id/textView20_day"
+                        app:layout_constraintTop_toTopOf="@+id/text_recount_day"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/simple_text_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout30">
+
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simple_layout_border"
+                        android:text="@string/adsorb_time_distribute"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_little_title"
+                        app:layout_constraintStart_toStartOf="@+id/guideline43"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.04" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="40dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_percent="0.96" />
+
+                    <view
+                        android:id="@+id/pie_view"
+                        class="im.dacer.androidcharts.PieView"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="@dimen/simple_layout_border"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                        app:layout_constraintStart_toStartOf="@+id/guideline43"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_task_list"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/simple_layout_border"
+                        app:layout_constraintEnd_toEndOf="@+id/pie_view"
+                        app:layout_constraintStart_toStartOf="@+id/pie_view"
+                        app:layout_constraintTop_toBottomOf="@+id/pie_view" />
+
+                    <TextView
+                        android:id="@+id/no_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simple_layout_border"
+                        android:text="@string/no_data"
+                        android:textColor="@color/diary_text_background"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--                vhb-->
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/simple_text_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3_day">
+
+
+                    <TextView
+                        android:id="@+id/textView23_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simple_layout_border"
+                        android:text="@string/day_adsorb_time_distribute"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_little_title"
+                        app:layout_constraintStart_toStartOf="@+id/guideline43_day"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline43_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.04" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline44_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="40dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_percent="0.96" />
+
+                    <view
+                        android:id="@+id/pie_view_day"
+                        class="im.dacer.androidcharts.PieView"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="@dimen/simple_layout_border"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline44_day"
+                        app:layout_constraintStart_toStartOf="@+id/guideline43_day"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23_day" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_task_list_day"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/simple_layout_border"
+                        app:layout_constraintEnd_toEndOf="@+id/pie_view_day"
+                        app:layout_constraintStart_toStartOf="@+id/pie_view_day"
+                        app:layout_constraintTop_toBottomOf="@+id/pie_view_day" />
+
+                    <TextView
+                        android:id="@+id/no_data_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simple_layout_border"
+                        android:text="@string/no_data"
+                        android:textColor="@color/diary_text_background"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline44_day"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/simple_text_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout29">
+
+                    <HorizontalScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView51">
+
+                        <view
+                            android:id="@+id/bar_view"
+                            class="im.dacer.androidcharts.BarView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp" />
+                        <!--                        <view-->
+                        <!--                            android:id="@+id/line_view"-->
+                        <!--                            class="im.dacer.androidcharts.LineView"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="300dp" />-->
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/diary_text_background"
+                        android:textSize="@dimen/diary_little_title"
+                        android:text="@string/text_month_time_use"
+                        app:layout_constraintStart_toStartOf="@id/guideline23"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.04" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+<!--    </ScrollView>-->
+</layout>

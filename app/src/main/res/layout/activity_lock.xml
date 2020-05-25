@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_button_background"
+    tools:context=".ui.close.LockActivity">
+
+    <com.example.demo.widget.CircleNumberProgressBar
+        android:id="@+id/progress_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cnpb_circle_radius="110dp"
+        app:cnpb_reach_color="@android:color/background_light"
+        app:cnpb_start_angle="270"
+        app:cnpb_text_color="@color/simple_text_color"
+        app:cnpb_text_size="32dp"
+        app:cnpb_text_visibility="invisible"
+        app:cnpb_unreach_color="@color/progress_bar_unreach"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/simple_text_color"
+        android:textSize="16dp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/user_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="lock_task_title"
+        android:textColor="@color/simple_text_color"
+        android:textSize="@dimen/item_title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_first"
+        tools:text="task的标题" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <ImageView
+        android:id="@+id/image_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stop_white_50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_pause"
+        app:layout_constraintTop_toTopOf="@+id/image_pause" />
+
+    <ImageView
+        android:id="@+id/image_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_pause_black_50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_text_do" />
+
+    <ImageView
+        android:id="@+id/image_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/image_pause"
+        app:layout_constraintEnd_toStartOf="@+id/image_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_pause"
+        android:src="@drawable/ic_music_note_white_50dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/demo_sign"
+        android:textColor="@color/simple_text_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/progress_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/close_text_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/working"
+        android:textColor="@color/simple_text_color"
+        app:layout_constraintEnd_toEndOf="@+id/user_number"
+        app:layout_constraintStart_toStartOf="@+id/user_number"
+        app:layout_constraintTop_toBottomOf="@+id/user_number" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

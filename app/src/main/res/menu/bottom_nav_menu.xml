@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_diary"
+        android:icon="@drawable/icon_diary"
+        android:title="@string/title_diary" />
+
+    <item
+        android:id="@+id/navigation_target"
+        android:icon="@drawable/icon_target"
+        android:title="@string/title_target" />
+
+    <item
+        android:id="@+id/navigation_task"
+        android:icon="@drawable/icon_task"
+        android:title="@string/title_task" />
+
+    <item
+        android:id="@+id/navigation_chart"
+        android:icon="@drawable/icon_chart"
+        android:title="@string/title_chart" />
+
+    <item
+        android:id="@+id/navigation_close"
+        android:icon="@drawable/ic_lock_black_24dp"
+        android:title="@string/title_close" />
+
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="zz">#2196F3</color>
+    <color name="button_background">#C3C3C3</color>
+    <color name="import_urgent_layout_background">#FFD8D8</color>
+    <color name="import_no_urgent_layout_background">#FEFCD3</color>
+    <color name="no_import_urgent_background">#D2FEFC</color>
+    <color name="no_import_no_urgent_background">#DFFED0</color>
+    <color name="relax_background">#66E0F8</color>
+    <color name="work_background">#48E180</color>
+    <color name="blue_button_background">#30C9E7</color>
+    <color name="simple_text_color">#FFFFFF</color>
+    <color name="progress_bar_unreach">#D7D7D7</color>
+    <color name="diary_background">#2DC9B9</color>
+    <color name="diary_text_background">#22AD9F</color>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/label_background_height">
+
+    <TextView
+        android:id="@+id/tag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/label_background_height"
+        android:background="@android:drawable/editbox_background_normal"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:text="标签"
+        android:textAlignment="center"
+        android:textSize="@dimen/notes_modify_time_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tag_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/label_background_height"
+        android:background="@android:drawable/editbox_background_normal"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:text="标签数"
+        android:textAlignment="center"
+        android:textSize="@dimen/notes_modify_time_text"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

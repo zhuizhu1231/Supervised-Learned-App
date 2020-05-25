@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_milepost"
+            android:icon="@drawable/icon_drawer_milepost"
+            android:title="@string/menu_drawer_milepost" />
+
+
+        <item
+            android:id="@+id/drawer_study_room"
+            android:icon="@drawable/icon_drawer_study_room"
+            android:title="@string/menu_drawer_study_room" />
+        <item
+            android:id="@+id/drawer_friend"
+            android:icon="@drawable/ic_drawer_friend_25dp"
+            android:title="@string/menu_drawer_friend" />
+        <item
+            android:id="@+id/drawer_notes"
+            android:icon="@drawable/icon_drawer_notes"
+            android:title="@string/menu_drawer_notes" />
+
+    </group>
+
+    <item android:title="配置">
+        <menu>
+            <item
+                android:id="@+id/drawer_task_label"
+                android:icon="@drawable/ic_label_outline_black_24dp"
+                android:title="@string/menu_drawer_task_label" />
+
+        </menu>
+    </item>
+
+</menu>

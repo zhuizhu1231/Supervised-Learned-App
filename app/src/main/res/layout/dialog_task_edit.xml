@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/simple_layout_border"
+            android:text="@string/text_task_edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_action_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/simple_layout_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_check_black_24dp" />
+
+        <TextView
+            android:id="@+id/tag_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/text_label_set"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tag_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/label_background_height"
+            android:layout_marginStart="4dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingRight="@dimen/text_space"
+            android:text="标签"
+            android:textAlignment="center"
+            android:textSize="@dimen/notes_modify_time_text"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tag_set"
+            app:layout_constraintStart_toEndOf="@+id/tag_set"
+            app:layout_constraintTop_toTopOf="@+id/tag_set" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_border_width"
+        android:paddingRight="@dimen/layout_border_width"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout12"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout12">
+
+        <EditText
+            android:id="@+id/edit_task_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/simple_layout_border"
+            android:layout_marginTop="@dimen/little_line_space"
+            android:layout_marginRight="@dimen/simple_layout_border"
+            android:ems="10"
+            android:hint="@string/task_title"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_line_space"
+            android:text="@string/text_task_title_input"
+            android:textSize="@dimen/diary_little_data"
+            app:layout_constraintStart_toStartOf="@+id/edit_task_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_line_space"
+            android:text="@string/text_task_remark_input"
+            android:textSize="@dimen/diary_little_data"
+            app:layout_constraintStart_toStartOf="@+id/edit_task_title"
+            app:layout_constraintTop_toBottomOf="@+id/edit_task_title" />
+
+        <EditText
+            android:id="@+id/edit_task_remark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_line_space"
+            android:ems="10"
+            android:hint="@string/task_remark"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/edit_task_title"
+            app:layout_constraintStart_toStartOf="@+id/edit_task_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_line_space"
+            android:text="@string/text_task_work_time_input"
+            android:textSize="@dimen/diary_little_data"
+            app:layout_constraintStart_toStartOf="@+id/edit_task_title"
+            app:layout_constraintTop_toBottomOf="@+id/edit_task_remark" />
+
+        <EditText
+            android:id="@+id/edit_task_work_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_line_space"
+            android:ems="10"
+            android:hint="@string/default_work_time"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/textView35"
+            app:layout_constraintStart_toStartOf="@+id/edit_task_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_dimen"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_task_work_time"
+            app:layout_constraintEnd_toEndOf="@+id/edit_task_remark"
+            app:layout_constraintTop_toTopOf="@+id/edit_task_work_time" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
